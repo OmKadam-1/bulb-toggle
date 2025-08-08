@@ -6,6 +6,28 @@
     <title>Document</title>
 </head>
 <body>
-    
+     <div class="card" id="card">
+        <h2 id="header">Bulb Toggle</h2>
+        <img src="on.png" id="on" class="img">
+        <div class="button">
+            <button onclick="on()" id="button-1">Glow</button>
+            <button onclick="off()" id="button-2">Dark</button>
+        </div>
+    </div>
+    <script>
+        const element = document.getElementById("on");
+        function on() {
+            element.src = "on.png";
+            const element1 = document.getElementById("card");
+            element1.style.backgroundColor = "yellow";
+
+
+        }
+        function off() {
+            element.src = "off.png";
+            const element1 = document.getElementById("card");
+            element1.style.backgroundColor = "rgba(0, 0, 0, 0.304)";
+        }
+    </script>
 </body>
 </html>
